@@ -12,10 +12,13 @@ const SingleForecast = ({day,cityid}) => {
         <div className="main__container_forecast">
           <div className="title_forcast">
             <div>
-              <h2>{cityid} , IR</h2>
+              {/* <h2>{cityid} , IR</h2> */}
+              {cityid ? <h2>{cityid} , IR</h2> : <h2>مشهد</h2>}
             </div>
             <div>
-              <p>{day.date}</p>
+              {/* <p>{day.date}</p> */}
+              {day ? <p>{day.date}</p> : <p>26.5.2021</p>}
+
             </div>
           </div>
         </div>

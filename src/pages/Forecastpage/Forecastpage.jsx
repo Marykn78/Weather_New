@@ -4,7 +4,7 @@ import {useParams} from 'react-router-dom'
 import axios from "axios";
 import SliderForecast from "../../components/SliderForecast/SliderForecast";
 const Forecastpage = () => {
-  const {cityid} =useParams('m') 
+  const {cityid} =useParams() 
   const [forecastData,setForecast]=useState()
   const [pending,setpending]=useState(true)
   const url = `https://api.openweathermap.org/data/2.5/forecast?q=${cityid}&lang=fa&units=metric&appid=196944c23663e73dfaf15cfcdeb48277`
