@@ -22,20 +22,25 @@ const SingleForecast = ({day,cityid}) => {
         <div className="forecast_details">
           <div className="forecast_items">
             <div className="item_temp">
-              <h1>{day.temp}°</h1>
+              {/* <h1>{day.temp}°</h1> */}
+              {day ? <h1>{day.temp}°</h1> : <h2>83</h2>}
             </div>
             <div className="item_wind">
               <div className="item_detail">
                 <iconify-icon icon="fontisto:wind" width="24"></iconify-icon>
-                <h3>{day.wind}</h3>
+                {/* <h3>{day.wind}</h3> */}
+                {day ? <h3>{day.wind}</h3>  : <h3>12</h3>}
               </div>
               <div className="item_detail">
                 <iconify-icon icon="bx:moon" width="26"></iconify-icon>
-                <h5>{day.description}</h5>
+                {/* <h5>{day.description}</h5> */}
+              {day ? <h5>{day.description}</h5> : <h5>ابری</h5>}
               </div>
               <div className="item_detail">
                 <iconify-icon icon="akar-icons:cloud" width="26"></iconify-icon>
-                <h3>{day.clouds}</h3>
+                {/* <h3>{day.clouds}</h3> */}
+              {day ? <h3>{day.clouds}</h3> : <h3>32</h3>}
+
               </div>
             </div>
           </div>

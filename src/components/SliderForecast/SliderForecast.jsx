@@ -28,7 +28,7 @@ const SliderForecast = ({forecastData,cityid}) => {
         top:"50%",
         transform:"translate(0,-50%)",
         left:"32px",
-        fontSize:"45px",
+        fontSize:"35px",
         color:"#fff",
         zIndex:1,
         cursor:"pointer"
@@ -39,7 +39,7 @@ const SliderForecast = ({forecastData,cityid}) => {
         top:"50%",
         transform:"translate(0,-50%)",
         right:"32px",
-        fontSize:"45px",
+        fontSize:"35px",
         color:"#fff",
         zIndex:1,
         cursor:"pointer"

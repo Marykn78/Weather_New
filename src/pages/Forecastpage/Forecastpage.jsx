@@ -4,13 +4,13 @@ import {useParams} from 'react-router-dom'
 import axios from "axios";
 import SliderForecast from "../../components/SliderForecast/SliderForecast";
 const Forecastpage = () => {
-  const {cityid} =useParams() 
+  const {cityid} =useParams('m') 
   const [forecastData,setForecast]=useState()
   const [pending,setpending]=useState(true)
   const url = `https://api.openweathermap.org/data/2.5/forecast?q=${cityid}&lang=fa&units=metric&appid=196944c23663e73dfaf15cfcdeb48277`
 
   const forecastHandler =async()=>{
-    const data =await axios(url).then(response=>response.data)
+    const data =await axios(url).then(response=>response?.data)
     if(data.cod==='200'){
       setForecast(data)
     }
