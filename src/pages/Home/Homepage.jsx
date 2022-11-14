@@ -28,9 +28,9 @@ const Homepage = () => {
         <div className="main_card">
             <Header dataa={dataa} searchCity={searchCity} location={location} setLocation={setLocation}/>
             <Cards dataa={dataa}/>
-            <Link to={`/forecast/${location}`}>
+            {/* <Link to={`/forecast/${location}`}>
                 <Forecastday/>
-            </Link>
+            </Link> */}
         </div>
     </div>
   );
